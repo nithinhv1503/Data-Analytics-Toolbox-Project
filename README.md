@@ -1,36 +1,52 @@
-# Data Analyst Toolbox: Indian Retail Sales Dashboard Portfolio Project
+# Data Analyst Toolbox: Indian Retail Sales Power BI Dashboard
 
-This repository serves as a complete portfolio project demonstrating skills from the **Data Analysts Toolbox: Excel, Python, Power BI, PivotTables** course, localized for the **Indian retail market**.
+This repository serves as a portfolio project demonstrating data visualization, DAX modeling, and report design skills using **Power BI Desktop**, aligned with the **Data Analysts Toolbox** curriculum. 
 
-It implements an Indian sales database (using INR currency `₹` and Indian states) and contains two complementary pathways for analysis:
-1. **Power BI Path**: A step-by-step tutorial and data source to build an interactive business intelligence dashboard in Power BI Desktop showing metrics formatted in Indian Rupees.
-2. **Python & Excel Path**: A script that automates loading the data, creating pivot aggregations, exporting a styled Excel report, and plotting matplotlib charts.
+The project models an Indian retail sales environment (utilizing Indian Rupees `₹` and Indian states) to track performance metrics across product categories and regional zones.
 
 ---
 
-## File Overview
+## Repository Contents
 
-- **`sales_data.csv`**: The primary dataset containing 30 transactions with attributes: Order ID, Order Date, Segment, Region, State, Category, Sales (₹), Quantity, and Net Profit (₹).
-- **`PowerBI_Dashboard_Guide.md`**: Your step-by-step guide to load the CSV, write DAX measures (Total Sales, Total Profit, Profit Margin), and construct a functional Power BI dashboard with slicers and matrices.
-- **`analyze.py`**: A python script that cleans the dataset, runs aggregations, saves charts, and builds a styled Excel sheet (`sales_pivot_report.xlsx`).
-- **`README.md`**: Project overview and usage guidelines.
+* **`Project.pbix`**: The primary Power BI report file containing report sheets, loaded queries, and calculations.
+* **`sales_data.csv`**: The primary database containing 30 transactions across Indian states (Maharashtra, Karnataka, West Bengal, Delhi, etc.) mapped to regional zones.
+* **`Custom_Innovative_Theme.json`**: A custom-designed **Aero-Glow Premium Dark** theme file containing drop shadows, 16px visual card border radii, and customized Segoe UI text styles.
+* **`PowerBI_Dashboard_Guide.md`**: A step-by-step documentation guide explaining how the data query, DAX calculations, and visual alignments were built.
 
 ---
 
-## Setup and Running
+## Core Calculations (DAX Measures)
 
-### Pathway A: Power BI Dashboard (Recommended Showcase)
-1. Open **Power BI Desktop**.
-2. Read the instructions in [PowerBI_Dashboard_Guide.md](file:///c:/Users/nithi/OneDrive/Documents/Data%20Analysis%20Project/PowerBI_Dashboard_Guide.md).
-3. Import **`sales_data.csv`**, set up the DAX measures using Indian Rupees (₹), and design your visual cards, column charts, and slicers.
+This dashboard utilizes custom **DAX (Data Analysis Expressions)** measures for performance reporting:
 
-### Pathway B: Python and Excel Automation
-1. Install Python dependencies:
-   ```bash
-   pip install pandas openpyxl matplotlib
+1. **Total Sales** (Sum of all order transactions):
+   ```dax
+   Total Sales = SUM(sales_data[Sales])
    ```
-2. Execute the python script:
-   ```bash
-   python analyze.py
+2. **Total Profit** (Net profit margin total):
+   ```dax
+   Total Profit = SUM(sales_data[Profit])
    ```
-3. Open the newly created **`sales_pivot_report.xlsx`** in Excel to see custom formatting (Classic Navy styling, double-border totals, conditional negative-profit highlighting) showing Rupees (₹) formatting, and view the Matplotlib chart images (`sales_by_category.png`, `profit_by_region.png`).
+3. **Profit Margin** (Overall margin ratio):
+   ```dax
+   Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)
+   ```
+
+---
+
+## Visual Presentation & Layout
+
+* **KPI Cards**: Dynamically display Total Sales (₹), Total Profit (₹), and Profit Margin (%) based on user filters.
+* **Segment Slicers**: Interactive buttons to filter all visuals by customer segment (Consumer, Corporate, Home Office).
+* **Matrix Grid**: Crosstab layout summarizing product category sales split by regional zones (North India, South India, East India, West India).
+* **Visual Styling**: Translucent dark slate backgrounds, rounded card edges (16px), drop shadows, and glowing cyan/purple indicators.
+
+---
+
+## How to Run & View the Project
+
+1. Install **Power BI Desktop** (available for free from the Microsoft Store).
+2. Download or clone this repository folder to your local machine.
+3. Double-click **`Project.pbix`** to open the report dashboard.
+4. Interact with the **Segment Slicers** at the top of the canvas to filter the visual charts.
+5. If you modify the underlying transaction values in `sales_data.csv`, click the **Refresh** button in the top Home menu bar of Power BI to pull in the new data automatically.
