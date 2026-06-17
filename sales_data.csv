@@ -1,0 +1,31 @@
+Order_ID,Order_Date,Segment,Region,State,Category,Sales,Quantity,Profit
+IN-2026-10001,2026-01-12,Consumer,East India,West Bengal,Electronics,125000.00,3,25000.00
+IN-2026-10002,2026-01-15,Consumer,East India,West Bengal,Furniture,85050.00,5,-4500.00
+IN-2026-10003,2026-01-20,Corporate,West India,Maharashtra,Office Supplies,12000.00,4,4000.00
+IN-2026-10004,2026-02-02,Consumer,West India,Gujarat,Electronics,45000.00,2,9000.00
+IN-2026-10005,2026-02-10,Home Office,West India,Maharashtra,Furniture,60000.00,3,8000.00
+IN-2026-10006,2026-02-14,Corporate,East India,Odisha,Office Supplies,8500.00,1,2500.00
+IN-2026-10007,2026-02-18,Consumer,North India,Delhi,Electronics,195000.00,6,45000.00
+IN-2026-10008,2026-03-01,Consumer,North India,Uttar Pradesh,Furniture,35000.00,2,-1000.00
+IN-2026-10009,2026-03-05,Corporate,North India,Punjab,Office Supplies,4550.00,2,1500.00
+IN-2026-10010,2026-03-12,Consumer,South India,Karnataka,Electronics,80000.00,3,16000.00
+IN-2026-10011,2026-03-18,Consumer,South India,Tamil Nadu,Furniture,110000.00,4,12000.00
+IN-2026-10012,2026-03-25,Corporate,South India,Telangana,Office Supplies,9500.00,3,3000.00
+IN-2026-10013,2026-04-02,Consumer,West India,Maharashtra,Electronics,150000.00,5,31000.00
+IN-2026-10014,2026-04-10,Home Office,West India,Gujarat,Furniture,72000.00,4,-3000.00
+IN-2026-10015,2026-04-15,Corporate,East India,West Bengal,Office Supplies,21000.00,3,7500.00
+IN-2026-10016,2026-04-22,Consumer,East India,Bihar,Electronics,64000.00,2,12000.00
+IN-2026-10017,2026-05-01,Consumer,East India,West Bengal,Furniture,98000.00,4,15000.00
+IN-2026-10018,2026-05-12,Corporate,North India,Delhi,Office Supplies,13000.00,2,4500.00
+IN-2026-10019,2026-05-20,Consumer,North India,Haryana,Electronics,115000.00,4,23000.00
+IN-2026-10020,2026-05-28,Home Office,North India,Uttar Pradesh,Furniture,45000.00,3,-2000.00
+IN-2026-10021,2026-06-02,Consumer,West India,Maharashtra,Office Supplies,6500.00,2,2000.00
+IN-2026-10022,2026-06-08,Corporate,West India,Gujarat,Electronics,72000.00,2,14000.00
+IN-2026-10023,2026-06-15,Consumer,South India,Kerala,Furniture,89000.00,3,-5000.00
+IN-2026-10024,2026-06-22,Home Office,South India,Tamil Nadu,Office Supplies,11000.00,5,3500.00
+IN-2026-10025,2026-07-01,Consumer,East India,West Bengal,Electronics,140000.00,4,28000.00
+IN-2026-10026,2026-07-10,Corporate,East India,Bihar,Furniture,54000.00,3,4000.00
+IN-2026-10027,2026-07-18,Consumer,West India,Maharashtra,Office Supplies,8500.00,2,2500.00
+IN-2026-10028,2026-08-02,Consumer,West India,Maharashtra,Electronics,98000.00,3,19500.00
+IN-2026-10029,2026-08-12,Home Office,North India,Delhi,Furniture,67000.00,3,9000.00
+IN-2026-10030,2026-08-20,Corporate,North India,Uttar Pradesh,Office Supplies,15000.00,4,5000.00

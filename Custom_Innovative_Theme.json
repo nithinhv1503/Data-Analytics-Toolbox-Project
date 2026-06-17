@@ -1,0 +1,76 @@
+{
+    "name": "Aero-Glow Premium Dark",
+    "dataColors": [
+        "#06b6d4", 
+        "#a855f7", 
+        "#f43f5e", 
+        "#10b981", 
+        "#e11d48", 
+        "#3b82f6", 
+        "#fb7185", 
+        "#f59e0b"
+    ],
+    "background": "#0b0f19",
+    "foreground": "#f8fafc",
+    "tableAccent": "#06b6d4",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "background": [{
+                    "show": true,
+                    "color": { "solid": { "color": "#111827" } },
+                    "transparency": 10
+                }],
+                "border": [{
+                    "show": true,
+                    "color": { "solid": { "color": "#1f2937" } },
+                    "radius": 16
+                }],
+                "title": [{
+                    "show": true,
+                    "fontFamily": "Segoe UI Semibold",
+                    "fontSize": 13,
+                    "fontColor": { "solid": { "color": "#f8fafc" } },
+                    "bold": true,
+                    "alignment": "Left"
+                }],
+                "dropShadow": [{
+                    "show": true,
+                    "color": { "solid": { "color": "#000000" } },
+                    "position": "Outer",
+                    "preset": "BottomRight"
+                }]
+            }
+        },
+        "card": {
+            "*": {
+                "labels": [{
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 10,
+                    "color": { "solid": { "color": "#9ca3af" } }
+                }],
+                "cardValue": [{
+                    "fontFamily": "Segoe UI Semibold",
+                    "fontSize": 28,
+                    "color": { "solid": { "color": "#06b6d4" } },
+                    "bold": true
+                }]
+            }
+        },
+        "slicer": {
+            "*": {
+                "header": [{
+                    "fontFamily": "Segoe UI Semibold",
+                    "fontSize": 10,
+                    "fontColor": { "solid": { "color": "#f8fafc" } },
+                    "bold": true
+                }],
+                "items": [{
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 9,
+                    "fontColor": { "solid": { "color": "#9ca3af" } }
+                }]
+            }
+        }
+    }
+}
